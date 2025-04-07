@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5c3e6, #e2a3f0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #5a2d82;
+}
+
+
+.calculadora-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(149, 70, 191, 0.3);
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.calculadora-input {
+    padding: 12px 15px;
+    border: 2px solid #e2a3f0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #5a2d82;
+    background-color: #fdf2ff;
+    transition: all 0.3s ease;
+    grid-column: span 2;
+}
+
+.calculadora-input:focus {
+    outline: none;
+    border-color: #c86bfa;
+    box-shadow: 0 0 0 3px rgba(200, 107, 250, 0.2);
+}
+
+/* Select de Operação */
+.calculadora-select {
+    padding: 12px 15px;
+    border: 2px solid #e2a3f0;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #5a2d82;
+    background-color: #fdf2ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    grid-column: span 2;
+}
+
+.calculadora-select:focus {
+    outline: none;
+    border-color: #c86bfa;
+    box-shadow: 0 0 0 3px rgba(200, 107, 250, 0.2);
+}
+
+/* Botão de Igual */
+.calculadora-button {
+    padding: 12px;
+    background: linear-gradient(45deg, #d147a3, #9c27b0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    grid-column: span 2;
+}
+
+.calculadora-button:hover {
+    background: linear-gradient(45deg, #c2185b, #7b1fa2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4);
+}
+
+.calculadora-button:active {
+    transform: translateY(0);
+}
+
+
+#resposta {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #9c27b0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(149, 70, 191, 0.2);
+    min-height: 20px;
+}
+
+/* GIF do Gatinho */
+.cat-gif {
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(156, 39, 176, 0.3);
+    max-width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .calculadora-container {
+        padding: 20px;
+    }
+    
+    .calculadora-input,
+    .calculadora-select,
+    .calculadora-button {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
