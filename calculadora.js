@@ -11,7 +11,7 @@ function calcular(){
     const operacao = seletor.value;
 
     if(operacao==="somar")
-       resposta.innerHTML = valor1 + valor2;
+        resposta.innerHTML = valor1 + valor2;
 
     if(operacao==="subtrair")
         resposta.innerHTML = valor1 - valor2;
@@ -20,7 +20,7 @@ function calcular(){
         resposta.innerHTML = valor1 * valor2;
 
     if(operacao==="dividir") {
-        if (campo2.value === '0') {
+        if (campo1.value === '0' || campo2.value === '0') {
             resposta.innerHTML = 'Divisão por 0!';
         } else {
             resposta.innerHTML = valor1 / valor2;
